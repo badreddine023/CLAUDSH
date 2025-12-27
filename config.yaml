@@ -1,0 +1,39 @@
+# Quran Hyper-Analysis Configuration
+languages:
+  primary: ['ar', 'en', 'fr']
+  output_format: 'trilingual'
+
+analysis:
+  markov_orders: [1, 2, 3, 4, 5]
+  window_sizes: [10, 25, 50, 100]  # For local analysis
+  entropy_levels: ['word', 'root', 'letter']
+  
+themes:
+  clusters: 
+    - 'توحيد/Tawhid/Monothéisme'
+    - 'نبوة/Prophecy/Prophétie'
+    - 'تشريع/Law/Loi'
+    - 'أخلاق/Ethics/Éthique'
+    - 'كون/Nature/Nature'
+    - 'آخرة/Hereafter/Au-delà'
+    - 'قصص/Narratives/Récits'
+    - 'إنذار/Warning/Avertissement'
+    - 'بشارة/Glad Tidings/Bonne nouvelle'
+    - 'حكمة/Wisdom/Sagesse'
+
+paths:
+  data_raw: './data/raw/'
+  data_processed: './data/processed/'
+  outputs: './data/outputs/'
+  visualizations: './data/outputs/visualizations/'
+
+visualization:
+  network_layout: 'forceatlas2'
+  color_palette: 'viridis'
+  figure_size: [16, 12]
+  dpi: 300
+
+export:
+  formats: ['json', 'csv', 'html', 'pdf']
+  include_raw_data: true
+  multilingual_labels: true

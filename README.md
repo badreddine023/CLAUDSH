@@ -1,420 +1,91 @@
-# Quranic Linguistic & Mathematical Analysis System
+# CLAUDSH: Quranic Hyper-Analysis Framework
 
-## Vision
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/release/python-3110/)
+[![React 19](https://img.shields.io/badge/react-19-blue.svg)](https://react.dev/)
+[![Tailwind CSS 4](https://img.shields.io/badge/tailwind-4-blue.svg)](https://tailwindcss.com/)
 
-Transform the Quran into a visual, mathematically analyzable system that reveals linguistic patterns, semantic relationships, and deeper meanings through computational analysis. This system measures, compares, and discovers the precise meanings of words through mathematical and linguistic frameworks inspired by Kabbalistic and prophetic traditions of textual interpretation.
+**CLAUDSH** (Computational Linguistic & Analytical Understanding of Divine Scripture Hermeneutics) is a multi-dimensional analytical framework that transforms the Quran into a visual, mathematically analyzable information space.
 
-## Project Overview
+[**Explore the Roadmap**](./ROADMAP.md) | [**Getting Started**](./docs/GETTING_STARTED.md) | [**API Documentation**](./docs/API_DOCUMENTATION.md)
 
-The Quranic Linguistic & Mathematical Analysis System is a comprehensive platform for deep linguistic and mathematical exploration of the Quran in both Arabic and English. It combines classical Islamic scholarship with modern computational linguistics to reveal hidden patterns, word relationships, and semantic networks within the sacred text.
+---
 
-### Core Objectives
+## 🌟 Vision
 
-**Linguistic Analysis:** Extract and analyze Arabic morphological structures, root words, and semantic relationships to understand the deeper linguistic foundations of Quranic vocabulary.
+Our mission is to reveal the deep linguistic patterns, semantic relationships, and structural miraculousness of the Quran through modern computational analysis. By combining classical Islamic scholarship with information theory, Markovian modeling, and topological network analysis, CLAUDSH provides a hyper-dimensional perspective on the sacred text.
 
-**Mathematical Modeling:** Apply statistical analysis, frequency distributions, similarity metrics, and pattern recognition to quantify linguistic relationships and discover correlations between words and concepts.
+## 🚀 Key Features
 
-**Visualization:** Transform abstract linguistic data into visual representations including word clouds, frequency distributions, semantic networks, and comparative analysis charts.
+- **Multi-Order Markov Analysis**: Explore word, root, and grammatical transitions from 1st to 5th order.
+- **Information-Theoretic Metrics**: Calculate Shannon entropy, KL divergence, and redundancy across surahs and verses.
+- **Local/Non-Local Duality**: Analyze the balance between intra-surah cohesion and global connectedness (Glocality Score).
+- **Semantic Field Extraction**: Discover thematic clusters and track their evolution across the revelation timeline.
+- **Interactive Visualizations**: 3D networks, heatmaps, and Markov state diagrams for intuitive data exploration.
+- **Bilingual Support**: Parallel analysis in Arabic and English, preserving the integrity of original meanings.
 
-**Semantic Discovery:** Build tools to find precise meanings of words through contextual analysis, frequency patterns, and relationship mapping across the entire Quranic corpus.
+## 🛠️ Technical Stack
 
-**Bilingual Integration:** Maintain parallel Arabic and English analysis while preserving the integrity of original meanings and enabling cross-linguistic comparison.
+- **Backend**: Python 3.11+ (NumPy, Pandas, SciPy, NetworkX, NLTK)
+- **Frontend**: React 19, TypeScript, Tailwind CSS 4, Recharts, D3.js
+- **API**: Express.js, tRPC, RESTful endpoints
+- **Database**: MySQL/TiDB with Drizzle ORM
 
-## System Architecture
+## 📂 Project Structure
 
-### Data Layer
-
-The system operates on a structured representation of Quranic text organized hierarchically:
-
-| Component | Description | Format |
-|-----------|-------------|--------|
-| Surah (Chapter) | 114 chapters of the Quran | Metadata + verse collection |
-| Verse (Ayah) | Individual verses within surahs | Arabic text + translations |
-| Word (Kalimah) | Individual words within verses | Root, form, meaning, frequency |
-| Root (Jizr) | Arabic linguistic roots (3-4 letters) | Morphological analysis |
-| Semantic Field | Conceptual groupings of related words | Network relationships |
-
-### Processing Pipeline
-
-**Stage 1: Text Normalization**
-- Remove diacritical marks (tashkeel) for standardized analysis
-- Normalize Arabic character variations
-- Tokenize verses into individual words
-- Create bilingual mappings
-
-**Stage 2: Morphological Analysis**
-- Extract Arabic root words (trilateral/quadrilateral)
-- Identify word forms and patterns (binyan)
-- Classify parts of speech
-- Map grammatical relationships
-
-**Stage 3: Semantic Mapping**
-- Build word co-occurrence matrices
-- Create semantic relationship graphs
-- Identify conceptual clusters
-- Map synonyms and related terms
-
-**Stage 4: Mathematical Analysis**
-- Calculate frequency distributions
-- Compute similarity metrics (Levenshtein, cosine, Jaccard)
-- Perform statistical analysis
-- Identify patterns and correlations
-
-**Stage 5: Visualization Generation**
-- Create frequency charts and word clouds
-- Build semantic network visualizations
-- Generate comparative analysis views
-- Produce exportable reports
-
-## Technical Stack
-
-### Backend
-- **Language:** Python 3.11+ (core analysis engines)
-- **Server:** Express.js + tRPC (API layer)
-- **Database:** MySQL/TiDB (metadata and results storage)
-- **NLP Libraries:** NLTK, spaCy, scikit-learn
-- **Data Processing:** Pandas, NumPy, SciPy
-
-### Frontend
-- **Framework:** React 19 + TypeScript
-- **Styling:** Tailwind CSS 4
-- **Visualization:** Recharts, D3.js
-- **UI Components:** shadcn/ui
-
-### Data Formats
-- **JSON:** Quran text, analysis results, API responses
-- **Python Modules:** Linguistic analysis, mathematical computation
-- **Markdown:** Documentation and analysis reports
-
-## Core Modules
-
-### 1. Quran Data Module (`quran_data.py`)
-
-Manages the complete Quranic corpus with bilingual support.
-
-**Key Functions:**
-- `load_quran()` - Load complete Quranic text
-- `get_surah(number)` - Retrieve specific chapter
-- `get_verse(surah, verse)` - Retrieve specific verse
-- `get_all_words()` - Extract all unique words
-- `search_word(term)` - Find word occurrences
-
-### 2. Linguistic Analysis Module (`linguistic_analysis.py`)
-
-Performs Arabic linguistic processing and morphological analysis.
-
-**Key Functions:**
-- `extract_root(word)` - Extract Arabic root from word form
-- `normalize_text(text)` - Normalize Arabic text
-- `get_word_forms(root)` - Find all forms of a root
-- `analyze_morphology(word)` - Detailed morphological breakdown
-- `build_semantic_field(word)` - Map related words
-
-### 3. Mathematical Analysis Module (`mathematical_analysis.py`)
-
-Applies statistical and mathematical methods to linguistic data.
-
-**Key Functions:**
-- `calculate_frequency(word)` - Word frequency in corpus
-- `similarity_score(word1, word2)` - Compute word similarity
-- `correlation_analysis(word1, word2)` - Find correlation patterns
-- `distribution_analysis(word)` - Statistical distribution
-- `pattern_detection()` - Identify recurring patterns
-
-### 4. Visualization Module (`visualization.py`)
-
-Generates visual representations of analysis results.
-
-**Key Functions:**
-- `generate_word_cloud(words)` - Create word cloud visualization
-- `plot_frequency_distribution(word)` - Plot frequency chart
-- `plot_semantic_network(words)` - Visualize word relationships
-- `plot_comparison(words)` - Comparative analysis charts
-- `export_visualization(format)` - Export as PNG/SVG
-
-### 5. API Router (`server/routers.ts`)
-
-Exposes analysis functions through tRPC procedures.
-
-**Procedures:**
-- `quran.search` - Search for words/verses
-- `quran.getWord` - Retrieve word analysis
-- `analysis.frequency` - Get frequency data
-- `analysis.similarity` - Compare words
-- `analysis.semanticNetwork` - Get relationship graph
-- `visualization.generate` - Create visualizations
-
-## Data Structures
-
-### Quran JSON Structure
-
-```json
-{
-  "surahs": [
-    {
-      "number": 1,
-      "name": "Al-Fatiha",
-      "nameArabic": "الفاتحة",
-      "verses": [
-        {
-          "number": 1,
-          "arabic": "الحمد لله رب العالمين",
-          "english": "All praise is due to Allah, the Lord of all worlds",
-          "words": [
-            {
-              "text": "الحمد",
-              "root": "حمد",
-              "meaning": "praise",
-              "frequency": 157
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
+```
+CLAUDSH/
+├── data/             # Quran datasets and analysis results
+├── src/              # Python analysis engines (Markov, Entropy, Semantic)
+├── client/           # React frontend application
+├── server/           # Backend services and API routes
+├── notebooks/        # Exploratory analysis with Jupyter
+├── docs/             # Comprehensive documentation and guides
+└── ROADMAP.md        # Detailed development phases and goals
 ```
 
-### Word Analysis Structure
-
-```json
-{
-  "word": "الحمد",
-  "root": "حمد",
-  "frequency": 157,
-  "occurrences": [
-    {"surah": 1, "verse": 1},
-    {"surah": 2, "verse": 172}
-  ],
-  "meanings": ["praise", "gratitude", "commendation"],
-  "relatedWords": ["حامد", "محمود", "حمادة"],
-  "semanticField": ["شكر", "ثناء", "تعظيم"],
-  "morphology": {
-    "pattern": "فعل",
-    "form": "noun",
-    "gender": "masculine",
-    "number": "singular"
-  }
-}
-```
-
-### Analysis Result Structure
-
-```json
-{
-  "analysisType": "similarity",
-  "word1": "الحمد",
-  "word2": "الشكر",
-  "similarity": 0.87,
-  "metrics": {
-    "levenshtein": 0.75,
-    "cosine": 0.92,
-    "contextual": 0.85
-  },
-  "commonContexts": [
-    {"surah": 2, "verse": 172},
-    {"surah": 31, "verse": 12}
-  ]
-}
-```
-
-## Usage Examples
-
-### Python Backend
-
-```python
-from quran_data import load_quran, get_all_words
-from linguistic_analysis import extract_root, build_semantic_field
-from mathematical_analysis import calculate_frequency, similarity_score
-
-# Load Quran
-quran = load_quran()
-
-# Get word analysis
-word = "الحمد"
-root = extract_root(word)
-frequency = calculate_frequency(word)
-semantic_field = build_semantic_field(word)
-
-# Compare words
-similarity = similarity_score("الحمد", "الشكر")
-```
-
-### Frontend React
-
-```typescript
-import { trpc } from "@/lib/trpc";
-
-export function WordAnalysis() {
-  const { data: wordData } = trpc.quran.getWord.useQuery({ word: "الحمد" });
-  const { data: similarWords } = trpc.analysis.similarity.useQuery({
-    word1: "الحمد",
-    word2: "الشكر"
-  });
-
-  return (
-    <div>
-      <h2>{wordData?.word}</h2>
-      <p>Frequency: {wordData?.frequency}</p>
-      <p>Similarity: {similarWords?.similarity}</p>
-    </div>
-  );
-}
-```
-
-## Installation & Setup
+## 🚦 Getting Started
 
 ### Prerequisites
 - Node.js 22+
 - Python 3.11+
-- MySQL/TiDB database
-- pnpm package manager
+- MySQL/TiDB
 
-### Installation Steps
-
+### Installation
 ```bash
-# Clone repository
+# Clone and install
 git clone https://github.com/badreddine023/CLAUDSH.git
 cd CLAUDSH
-
-# Install dependencies
 pnpm install
-
-# Set up database
-pnpm db:push
-
-# Install Python dependencies
 pip install -r requirements.txt
 
-# Start development server
+# Initialize and start
+pnpm db:push
 pnpm dev
 ```
 
-### Environment Variables
+## 🗺️ Roadmap Highlights
 
-```
-DATABASE_URL=mysql://user:password@localhost:3306/quran_analysis
-VITE_APP_TITLE=Quranic Analysis System
-VITE_APP_LOGO=/logo.svg
-```
+- **Phase 1: Data Preparation** (In Progress) - Normalization, root extraction, and POS tagging.
+- **Phase 2: Core Analysis** (In Progress) - Markov chains and information theory engines.
+- **Phase 3: Glocality & Duality** (Planned) - Local/global connectedness metrics.
+- **Phase 4: Semantic Networks** (Planned) - Thematic clustering and evolution tracking.
+- **Phase 5: Visualization Suite** (Planned) - Interactive dashboards and 3D graphs.
 
-## Project Structure
+[View the full roadmap for more details.](./ROADMAP.md)
 
-```
-quran-analysis-system/
-├── client/                          # React frontend
-│   ├── src/
-│   │   ├── pages/                   # Page components
-│   │   ├── components/              # Reusable UI components
-│   │   ├── lib/                     # Utilities and helpers
-│   │   └── App.tsx                  # Main app component
-│   └── public/                      # Static assets
-├── server/                          # Backend services
-│   ├── routers.ts                   # tRPC procedure definitions
-│   ├── db.ts                        # Database helpers
-│   └── _core/                       # Framework internals
-├── drizzle/                         # Database schema
-│   └── schema.ts                    # Table definitions
-├── python/                          # Python analysis engines
-│   ├── quran_data.py                # Quran corpus management
-│   ├── linguistic_analysis.py       # Arabic NLP processing
-│   ├── mathematical_analysis.py     # Statistical analysis
-│   ├── visualization.py             # Chart generation
-│   └── requirements.txt             # Python dependencies
-├── data/                            # Quran datasets
-│   ├── quran.json                   # Complete Quranic text
-│   ├── translations.json            # English translations
-│   └── roots.json                   # Arabic root mappings
-└── README.md                        # This file
-```
+## 🤝 Contributing
 
-## Development Workflow
+We welcome contributions from developers, linguists, and scholars. Please see our [Contributing Guidelines](./CONTRIBUTING.md) to get started.
 
-### Adding a New Analysis Feature
+## 📜 License
 
-1. **Define Data Structure:** Add schema in `drizzle/schema.ts`
-2. **Implement Backend:** Create Python module in `python/`
-3. **Create API Endpoint:** Add tRPC procedure in `server/routers.ts`
-4. **Build Frontend:** Create React component in `client/src/pages/`
-5. **Test:** Write tests for all components
-6. **Document:** Update README with usage examples
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### Database Migrations
-
-```bash
-# After schema changes
-pnpm db:push
-
-# View migration status
-pnpm db:studio
-```
-
-## Features Roadmap
-
-### Phase 1: Core Analysis (Current)
-- Word frequency analysis
-- Root word extraction
-- Basic similarity metrics
-- Simple visualizations
-
-### Phase 2: Advanced Linguistics
-- Full morphological analysis
-- Semantic field mapping
-- Contextual analysis
-- Pattern recognition
-
-### Phase 3: Mathematical Modeling
-- Correlation analysis
-- Statistical distributions
-- Network analysis
-- Predictive models
-
-### Phase 4: Enhanced Visualization
-- Interactive semantic networks
-- 3D visualizations
-- Real-time analysis dashboards
-- Export capabilities
-
-### Phase 5: AI Integration
-- LLM-powered meaning discovery
-- Semantic understanding
-- Contextual recommendations
-- Intelligent search
-
-## Contributing
-
-Contributions are welcome. Please follow these guidelines:
-
-1. Create a feature branch: `git checkout -b feature/your-feature`
-2. Make your changes and write tests
-3. Commit with clear messages: `git commit -m "Add feature description"`
-4. Push to branch: `git push origin feature/your-feature`
-5. Create a Pull Request
-
-## References & Sources
-
-This project draws inspiration from classical Islamic scholarship traditions including Tafsir (Quranic exegesis), Kabbalistic textual analysis methods, and modern computational linguistics.
-
-**Key References:**
-- Quranic linguistics and morphology
-- Arabic NLP and text processing
-- Statistical analysis and pattern recognition
-- Network analysis and visualization
-
-## License
-
-MIT License - See LICENSE file for details
-
-## Author
+## 👤 Author
 
 **Manus AI** - Autonomous AI Agent for Computational Quranic Analysis
 
-## Contact & Support
-
-For questions, issues, or contributions, please visit the GitHub repository or contact the development team.
-
 ---
 
-**Last Updated:** December 2025
-**Version:** 1.0.0
-**Status:** Active Development
+*Revealing patterns invisible to linear reading.*

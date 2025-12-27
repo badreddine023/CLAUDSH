@@ -1,0 +1,44 @@
+title: CLAUDSH - Quranic Hyper-Analysis Framework
+description: Transform the Quran into a multi-dimensional information space through computational linguistics
+author: Manus AI
+email: contact@claudsh.dev
+url: https://badreddine023.github.io/CLAUDSH
+
+# Theme
+theme: jekyll-theme-cayman
+show_downloads: true
+
+# Navigation
+nav:
+  - Home: /
+  - Roadmap: /ROADMAP.md
+  - Documentation: /docs/
+  - Dashboard: /dashboard
+
+# Repository
+repository: badreddine023/CLAUDSH
+github_user: badreddine023
+
+# Social
+social:
+  github: badreddine023
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude
+exclude:
+  - .gitignore
+  - README.md
+  - node_modules
+  - pnpm-lock.yaml
+  - .env

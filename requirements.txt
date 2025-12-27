@@ -1,0 +1,12 @@
+numpy
+pandas
+pyyaml
+matplotlib
+seaborn
+scipy
+networkx
+streamlit
+scikit-learn
+nltk
+arabic-reshaper
+python-bidi
