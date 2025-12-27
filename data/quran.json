@@ -1,0 +1,330 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "totalSurahs": 114,
+    "totalVerses": 6236,
+    "language": "Arabic",
+    "transliteration": "Standard",
+    "lastUpdated": "2025-12-27"
+  },
+  "surahs": [
+    {
+      "number": 1,
+      "name": "Al-Fatiha",
+      "nameArabic": "الفاتحة",
+      "nameTransliteration": "al-Fātiḥah",
+      "meaning": "The Opening",
+      "type": "Meccan",
+      "verses": 7,
+      "verseList": [
+        {
+          "number": 1,
+          "arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+          "englishTranslation": "In the name of Allah, the Most Gracious, the Most Merciful",
+          "transliteration": "Bismillāh ar-raḥmān ar-raḥīm",
+          "words": [
+            {
+              "arabicWord": "بسم",
+              "transliteration": "bismi",
+              "englishMeaning": "in the name",
+              "root": "بسم",
+              "partOfSpeech": "noun"
+            },
+            {
+              "arabicWord": "الله",
+              "transliteration": "allāh",
+              "englishMeaning": "Allah",
+              "root": "اله",
+              "partOfSpeech": "noun"
+            },
+            {
+              "arabicWord": "الرحمن",
+              "transliteration": "ar-raḥmān",
+              "englishMeaning": "the Most Gracious",
+              "root": "رحم",
+              "partOfSpeech": "noun"
+            },
+            {
+              "arabicWord": "الرحيم",
+              "transliteration": "ar-raḥīm",
+              "englishMeaning": "the Most Merciful",
+              "root": "رحم",
+              "partOfSpeech": "noun"
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "arabic": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+          "englishTranslation": "All praise is due to Allah, the Lord of all worlds",
+          "transliteration": "al-ḥamdu lillāh rabb al-ʿālamīn",
+          "words": [
+            {
+              "arabicWord": "الحمد",
+              "transliteration": "al-ḥamdu",
+              "englishMeaning": "praise",
+              "root": "حمد",
+              "partOfSpeech": "noun"
+            },
+            {
+              "arabicWord": "لله",
+              "transliteration": "lillāh",
+              "englishMeaning": "to Allah",
+              "root": "اله",
+              "partOfSpeech": "preposition+noun"
+            },
+            {
+              "arabicWord": "رب",
+              "transliteration": "rabb",
+              "englishMeaning": "Lord",
+              "root": "ربب",
+              "partOfSpeech": "noun"
+            },
+            {
+              "arabicWord": "العالمين",
+              "transliteration": "al-ʿālamīn",
+              "englishMeaning": "of all worlds",
+              "root": "علم",
+              "partOfSpeech": "noun"
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "arabic": "الرَّحْمَٰنِ الرَّحِيمِ",
+          "englishTranslation": "The Most Gracious, the Most Merciful",
+          "transliteration": "ar-raḥmān ar-raḥīm",
+          "words": [
+            {
+              "arabicWord": "الرحمن",
+              "transliteration": "ar-raḥmān",
+              "englishMeaning": "the Most Gracious",
+              "root": "رحم",
+              "partOfSpeech": "noun"
+            },
+            {
+              "arabicWord": "الرحيم",
+              "transliteration": "ar-raḥīm",
+              "englishMeaning": "the Most Merciful",
+              "root": "رحم",
+              "partOfSpeech": "noun"
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "arabic": "مَالِكِ يَوْمِ الدِّينِ",
+          "englishTranslation": "Master of the Day of Judgment",
+          "transliteration": "mālik yawm ad-dīn",
+          "words": [
+            {
+              "arabicWord": "مالك",
+              "transliteration": "mālik",
+              "englishMeaning": "Master",
+              "root": "ملك",
+              "partOfSpeech": "noun"
+            },
+            {
+              "arabicWord": "يوم",
+              "transliteration": "yawm",
+              "englishMeaning": "day",
+              "root": "يوم",
+              "partOfSpeech": "noun"
+            },
+            {
+              "arabicWord": "الدين",
+              "transliteration": "ad-dīn",
+              "englishMeaning": "the judgment",
+              "root": "دين",
+              "partOfSpeech": "noun"
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "arabic": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+          "englishTranslation": "You alone we worship, and You alone we ask for help",
+          "transliteration": "iyyāka naʿbud wa-iyyāka nastaʿīn",
+          "words": [
+            {
+              "arabicWord": "إياك",
+              "transliteration": "iyyāka",
+              "englishMeaning": "You",
+              "root": "ايا",
+              "partOfSpeech": "pronoun"
+            },
+            {
+              "arabicWord": "نعبد",
+              "transliteration": "naʿbud",
+              "englishMeaning": "we worship",
+              "root": "عبد",
+              "partOfSpeech": "verb"
+            },
+            {
+              "arabicWord": "نستعين",
+              "transliteration": "nastaʿīn",
+              "englishMeaning": "we ask for help",
+              "root": "عون",
+              "partOfSpeech": "verb"
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "arabic": "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ",
+          "englishTranslation": "Guide us to the straight path",
+          "transliteration": "ihdina as-sirāt al-mustaqīm",
+          "words": [
+            {
+              "arabicWord": "اهدنا",
+              "transliteration": "ihdina",
+              "englishMeaning": "guide us",
+              "root": "هدي",
+              "partOfSpeech": "verb"
+            },
+            {
+              "arabicWord": "الصراط",
+              "transliteration": "as-sirāt",
+              "englishMeaning": "the path",
+              "root": "سرط",
+              "partOfSpeech": "noun"
+            },
+            {
+              "arabicWord": "المستقيم",
+              "transliteration": "al-mustaqīm",
+              "englishMeaning": "the straight",
+              "root": "قيم",
+              "partOfSpeech": "adjective"
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "arabic": "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+          "englishTranslation": "The path of those upon whom You have bestowed favor, not of those who have earned anger, nor of those who are astray",
+          "transliteration": "sirāt alladhīn anʿamt ʿalayhim ghayra al-maghḍūb ʿalayhim wa-lā aḍ-ḍāllīn",
+          "words": [
+            {
+              "arabicWord": "صراط",
+              "transliteration": "sirāt",
+              "englishMeaning": "path",
+              "root": "سرط",
+              "partOfSpeech": "noun"
+            },
+            {
+              "arabicWord": "الذين",
+              "transliteration": "alladhīn",
+              "englishMeaning": "those",
+              "root": "ذي",
+              "partOfSpeech": "pronoun"
+            },
+            {
+              "arabicWord": "أنعمت",
+              "transliteration": "anʿamt",
+              "englishMeaning": "you have bestowed",
+              "root": "نعم",
+              "partOfSpeech": "verb"
+            },
+            {
+              "arabicWord": "غير",
+              "transliteration": "ghayra",
+              "englishMeaning": "not",
+              "root": "غير",
+              "partOfSpeech": "preposition"
+            },
+            {
+              "arabicWord": "المغضوب",
+              "transliteration": "al-maghḍūb",
+              "englishMeaning": "those who earned anger",
+              "root": "غضب",
+              "partOfSpeech": "noun"
+            },
+            {
+              "arabicWord": "الضالين",
+              "transliteration": "aḍ-ḍāllīn",
+              "englishMeaning": "the astray",
+              "root": "ضلل",
+              "partOfSpeech": "noun"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "name": "Al-Baqarah",
+      "nameArabic": "البقرة",
+      "nameTransliteration": "al-Baqarah",
+      "meaning": "The Cow",
+      "type": "Medinan",
+      "verses": 286,
+      "verseList": [
+        {
+          "number": 1,
+          "arabic": "الم",
+          "englishTranslation": "Alif, Lam, Meem",
+          "transliteration": "alif lām mīm",
+          "words": [
+            {
+              "arabicWord": "الم",
+              "transliteration": "alif lām mīm",
+              "englishMeaning": "mysterious letters",
+              "root": "الم",
+              "partOfSpeech": "letters"
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "arabic": "ذَٰلِكَ الْكِتَابُ لَا رَيْبَ فِيهِ هُدًى لِلْمُتَّقِينَ",
+          "englishTranslation": "This is the Book about which there is no doubt, a guidance for those conscious of Allah",
+          "transliteration": "dhālik al-kitāb lā rayb fīhi hudā lil-muttaqīn",
+          "words": [
+            {
+              "arabicWord": "ذلك",
+              "transliteration": "dhālik",
+              "englishMeaning": "that",
+              "root": "ذلك",
+              "partOfSpeech": "pronoun"
+            },
+            {
+              "arabicWord": "الكتاب",
+              "transliteration": "al-kitāb",
+              "englishMeaning": "the Book",
+              "root": "كتب",
+              "partOfSpeech": "noun"
+            },
+            {
+              "arabicWord": "لا",
+              "transliteration": "lā",
+              "englishMeaning": "no",
+              "root": "لا",
+              "partOfSpeech": "particle"
+            },
+            {
+              "arabicWord": "ريب",
+              "transliteration": "rayb",
+              "englishMeaning": "doubt",
+              "root": "ريب",
+              "partOfSpeech": "noun"
+            },
+            {
+              "arabicWord": "هدى",
+              "transliteration": "hudā",
+              "englishMeaning": "guidance",
+              "root": "هدي",
+              "partOfSpeech": "noun"
+            },
+            {
+              "arabicWord": "المتقين",
+              "transliteration": "al-muttaqīn",
+              "englishMeaning": "the conscious",
+              "root": "تقي",
+              "partOfSpeech": "noun"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
